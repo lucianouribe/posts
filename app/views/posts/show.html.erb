@@ -1,0 +1,17 @@
+<h1> <%= @post.title %> </h1>
+<hr />
+
+<p>
+  Author:
+  <i> <%= @post.autor %> </i>
+</p>
+
+<blockquote>
+  <%= @post.body %>
+</blockquote>
+
+<h6> Is Public: <%= @post.public ? 'yes' : 'No' %> </h6>
+
+<%= link_to 'Back', :back %>
+<%= link_to 'Menu', posts_path %>
+<!-- <%= link_to 'Back', post_path %> -->

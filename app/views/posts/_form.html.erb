@@ -1,0 +1,19 @@
+<%= form_for @post do |f| %>
+  <%= f.label :autor %>
+  <%= f.text_field :autor %>
+  <br />
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br />
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  <br />
+
+  <%= f.label :public %>
+  <%= f.check_box :public %>
+  <br />
+
+  <%= f.submit %>
+<% end %>
